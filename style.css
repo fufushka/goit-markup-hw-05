@@ -402,7 +402,7 @@ span.footer-logo-span {
 
 .backdrop.is-hidden .modal {
   opacity: 0;
-  transform: translateY(-1000px) rotateX(-60deg) scale(0.4);
+  transform: translateY(-1000px) translateX(-190px) rotateX(-60deg) scale(0.4);
   transform-origin: 50% 100%;
 }
 
