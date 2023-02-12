@@ -449,15 +449,13 @@ span.footer-logo-span {
   color: black;
   transition: background-color var(--trns-main);
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:active {
   background-color: var(--color-ocean);
 }
 .modal-btn-svg {
-  transition: fill var(--trns-main);
   fill: currentColor;
 }
-.modal-btn:hover .modal-btn-svg {
+.modal-btn:active .modal-btn-svg {
   fill: white;
 }
 
