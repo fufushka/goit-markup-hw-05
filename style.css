@@ -398,29 +398,30 @@ span.footer-logo-span {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  perspective: 1300px;
 }
-.backdrop .modal {
-  transition: all 0.3s ease-in;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-}
+
 .backdrop.is-hidden .modal {
-  transform-style: preserve-3d;
   opacity: 0;
+  transform: translateY(-1000px) rotateX(-60deg) scale(0.4);
+  transform-origin: 50% 100%;
 }
 
 .backdrop.is-hidden {
   pointer-events: none;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0.1;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  opacity: 1;
+  transform-origin: 50% 1400px;
+  transform: translate(-50%, -50%) rotateX(0) scale(1);
 
   width: 408px;
   min-height: 576px;
