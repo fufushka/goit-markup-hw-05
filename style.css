@@ -120,6 +120,9 @@ span.footer-logo-span {
   transition: color var(--trns-main);
   position: relative;
 }
+.header-link.current {
+  color: var(--accent-color);
+}
 .header-link.current::after {
   content: "";
   position: absolute;
